@@ -1,0 +1,87 @@
+@media only screen and (max-width:1920px) {
+    .container {
+        /* max-width: 1400px; */
+        height: 100%;
+    }
+    .row {
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width:1480px) {
+    .hero_top .hero_img .open_img {
+        position: initial;
+        right: inherit;
+    }
+}
+
+@media only screen and (max-width:991px) {
+    header .navbar .navbar-nav .nav-item .nav-link {
+        width: 100%;
+        max-width: 180px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .hero_top {
+        height: initial;
+        padding-top: 13%;
+    }
+    .produc_brief .produc_tabs ul li .nav-link {
+        margin-bottom: 20px !important;
+    }
+    footer .quick_box ul {
+        padding-left: 0px;
+    }
+    .contact_us .proc .dowmload_op {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .hero_top {
+        padding-top: 19%;
+    }
+    .hero_box .grey_one .form-group input {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    body {
+        font-size: 14px;
+    }
+    .hero_top .hero_box .grey_one h5,
+    .about_us .intro_box .grey_one h5,
+    .produc_brief .produc_box h5,
+    .pricing .price_box .greyop h5,
+    .resources .res_op .white_box h5,
+    .contact_us .test_box h5 {
+        font-size: 30px;
+    }
+    .hero_top .hero_box .grey_one p {
+        font-size: 16px;
+    }
+    .about_us .about_img .side_img {
+        height: initial;
+    }
+    footer .quick_box {
+        text-align: center;
+    }
+    footer .social_icon {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:475px) {
+    .hero_top {
+        padding-top: 28%;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .pricing .tab-content .first_box .chids {
+        display: block;
+        text-align: left;
+    }
+}
