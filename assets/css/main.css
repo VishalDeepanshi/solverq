@@ -941,6 +941,7 @@ footer .social_icon .link:hover {
     padding-top: 90px;
     padding-bottom: 90px;
     background: transparent;
+    overflow: hidden;
 }
 
 .about_hero {
@@ -950,6 +951,7 @@ footer .social_icon .link:hover {
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
+    overflow: hidden;
 }
 
 .about_hero .about_title {
