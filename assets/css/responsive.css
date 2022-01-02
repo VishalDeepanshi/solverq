@@ -36,6 +36,33 @@
     .contact_us .proc .dowmload_op {
         padding: 20px;
     }
+    .login_box .left_box {
+        display: none;
+    }
+    .login_box .right_box {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .about_hero {
+        height: initial;
+        padding-top: 12%;
+        padding-bottom: 50px;
+    }
+    .about_hero .img_about img {
+        position: initial;
+    }
+    .contact_form .open_box .name {
+        display: block;
+    }
+    .contact_form .open_box .form_group,
+    .contact_form .open_box .login_btn {
+        margin-right: 0px;
+    }
+    .contact_form .open_box .form_group textarea,
+    .contact_form .open_box .form_group .open input,
+    .contact_form .open_box .form_group .open input {
+        padding-left: 12% !important;
+    }
 }
 
 @media only screen and (max-width:767px) {
@@ -44,6 +71,9 @@
     }
     .hero_box .grey_one .form-group input {
         margin-bottom: 20px;
+    }
+    .about_hero {
+        padding-top: 22%;
     }
 }
 
@@ -56,7 +86,8 @@
     .produc_brief .produc_box h5,
     .pricing .price_box .greyop h5,
     .resources .res_op .white_box h5,
-    .contact_us .test_box h5 {
+    .contact_us .test_box h5,
+    .login_box .right_box .grey_box .wel_come h5 {
         font-size: 30px;
     }
     .hero_top .hero_box .grey_one p {
@@ -71,11 +102,27 @@
     footer .social_icon {
         justify-content: center;
     }
+    .about_hero {
+        padding-top: 28%;
+    }
 }
 
 @media only screen and (max-width:475px) {
     .hero_top {
         padding-top: 28%;
+    }
+    .login_box .right_box .grey_box form .form_group .open input,
+    .contact_form .open_box .form_group textarea,
+    .contact_form .open_box .form_group .open input,
+    .contact_form .open_box .form_group .open input {
+        padding-left: 17%;
+    }
+    .teams .flex_box .first_box {
+        display: block;
+    }
+    .contact_det {
+        margin-left: 0px;
+        margin-top: 20px;
     }
 }
 
@@ -83,5 +130,11 @@
     .pricing .tab-content .first_box .chids {
         display: block;
         text-align: left;
+    }
+    .login_box .right_box .grey_box form .form_group .open input,
+    .contact_form .open_box .form_group textarea,
+    .contact_form .open_box .form_group .open input,
+    .contact_form .open_box .form_group .open input {
+        padding-left: 19%;
     }
 }

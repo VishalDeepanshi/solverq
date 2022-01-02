@@ -23,6 +23,7 @@ li {
     border-radius: 10px;
     color: #fff !important;
     font-weight: 500;
+    text-align: center;
     transition: all .3s ease-in-out;
     text-decoration: none;
 }
@@ -50,6 +51,14 @@ header .navbar .navbar-nav .nav-item .nav-link {
 
 header .navbar .navbar-nav .nav-item .nav-link:hover {
     color: #6958FF;
+}
+
+header .navbar .navbar-nav .nav-item .active {
+    color: #6958FF;
+}
+
+header .navbar .navbar-nav .nav-item .active::after {
+    width: 40% !important;
 }
 
 header .navbar .navbar-nav .nav-item .nav-link::after {
@@ -167,6 +176,7 @@ header .navbar .navbar-nav .nav-item .log_in {
     width: 100%;
     height: 600px;
     position: relative;
+    margin-bottom: 30px;
 }
 
 .about_us .about_img .side_img img {
@@ -215,6 +225,14 @@ header .navbar .navbar-nav .nav-item .log_in {
     line-height: 30px;
 }
 
+.about_us .produc_box {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 800px;
+}
+
 
 /*--Product Breief--*/
 
@@ -230,6 +248,7 @@ header .navbar .navbar-nav .nav-item .log_in {
     margin-bottom: 40px;
 }
 
+.about_us .produc_box .product_span,
 .produc_brief .produc_box .product_span {
     color: #6958FF;
     font-size: 16px;
@@ -240,6 +259,7 @@ header .navbar .navbar-nav .nav-item .log_in {
     letter-spacing: 3px;
 }
 
+.about_us .produc_box h5,
 .produc_brief .produc_box h5 {
     font-weight: 700;
     font-size: 35px;
@@ -249,6 +269,7 @@ header .navbar .navbar-nav .nav-item .log_in {
     color: #6958FF;
 }
 
+.about_us .produc_box p,
 .produc_brief .produc_box p {
     width: 100%;
     line-height: 30px;
@@ -386,12 +407,12 @@ header .navbar .navbar-nav .nav-item .log_in {
     margin-bottom: 20px;
 }
 
-.form-check {
+.pricing .tab-content .first_box .form-check {
     width: 100%;
     display: flex;
 }
 
-.form-check-input {
+.pricing .tab-content .first_box .form-check-input {
     width: 30px !important;
     height: 30px !important;
     border-radius: 50% !important;
@@ -404,6 +425,11 @@ header .navbar .navbar-nav .nav-item .log_in {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+}
+
+.pricing .tab-content .first_box .form-check-input:checked {
+    background-color: #FFB800 !important;
+    border-color: #FFB800 !important;
 }
 
 .pricing .tab-content .first_box .chids p {
@@ -433,7 +459,8 @@ header .navbar .navbar-nav .nav-item .log_in {
     align-items: center;
 }
 
-.resources .res_op .white_box span {
+.resources .res_op .white_box span,
+.teams .white_box span {
     color: #6958FF;
     display: block;
     margin-bottom: 15px;
@@ -442,7 +469,8 @@ header .navbar .navbar-nav .nav-item .log_in {
     letter-spacing: 3px;
 }
 
-.resources .res_op .white_box h5 {
+.resources .res_op .white_box h5,
+.teams .white_box h5 {
     font-weight: 700;
     font-size: 35px;
     margin-bottom: 20px;
@@ -696,4 +724,375 @@ footer .social_icon .link:hover {
     background-color: #00BB98;
     color: #fff;
     border-color: #00BB98;
+}
+
+
+/*--Login--*/
+
+.login_box {
+    display: flex;
+}
+
+.login_box .height_one {
+    height: 100vh;
+}
+
+.login_box .left_box {
+    padding: 20px;
+    width: 50%;
+    background-image: url(../images/bg_login.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    overflow: hidden;
+    background-size: cover;
+    height: 100%;
+}
+
+.login_box .title_one {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.login_box .login_img {
+    height: 600px;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.login_box .login_img img {
+    position: absolute;
+    bottom: 0;
+    left: -15%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    height: 100%;
+}
+
+.login_box .title_one h5 {
+    font-size: 30px;
+    color: #fff;
+}
+
+.login_box .title_one p {
+    font-size: 16px;
+    color: #DDDDDD;
+    letter-spacing: 2px;
+}
+
+.login_box .right_box {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50%;
+    width: 50%;
+}
+
+.login_box .right_box .grey_box {
+    width: 100%;
+    max-width: 571px;
+}
+
+.login_box .right_box .grey_box .logo_img {
+    margin-bottom: 40px;
+}
+
+.login_box .right_box .grey_box .wel_come h5 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.login_box .right_box .grey_box .wel_come p {
+    color: #787878;
+}
+
+.login_box .right_box .grey_box form .form_group label {
+    font-size: 16px;
+    color: #000;
+}
+
+.login_box .right_box .grey_box form .form_group .open {
+    position: relative;
+}
+
+.login_box .right_box .grey_box form .form_group .open input {
+    background-color: #fff;
+    padding: 20px;
+    border-color: #EFF0F6;
+    padding-left: 12%;
+    box-shadow: 0px 4px 22px rgba(8, 15, 52, 0.03);
+}
+
+.login_box .right_box .grey_box form .form_group .open input::placeholder {
+    color: #787878;
+}
+
+.login_box .right_box .grey_box form {
+    margin-bottom: 120px;
+}
+
+.login_box .right_box .grey_box form .form_group .open svg {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #6958FF;
+}
+
+.opop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.opop .form-check .form-check-input:checked {
+    background-color: #6958FF;
+}
+
+.opop a {
+    color: #6958FF;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.opop a:hover {
+    text-decoration: underline;
+}
+
+.login_box .right_box .grey_box form .login_btn {
+    display: block;
+    text-transform: uppercase;
+    padding: 20px 15px;
+}
+
+.login_box .right_box .grey_box .create_acc {
+    color: #787878;
+}
+
+.login_box .right_box .grey_box .create_acc a {
+    font-weight: 600;
+    color: #6958FF;
+    transition: all .3s ease;
+}
+
+.login_box .right_box .grey_box .create_acc a:hover {
+    text-decoration: none;
+}
+
+
+/*--forgot pass---*/
+
+.forgot_one {
+    background: rgb(221, 230, 241);
+    background: linear-gradient(180deg, rgba(221, 230, 241, 1) 28%, rgba(246, 248, 251, 1) 80%);
+}
+
+.forgot_one .right_box {
+    margin-left: 0px;
+    width: 100%;
+    height: 100vh;
+}
+
+.forgot_one .right_box .grey_box {
+    max-width: 650px;
+}
+
+.forgot_one .right_box .grey_box .logo_img {
+    text-align: center;
+}
+
+.forgot_one .right_box .grey_box .wel_come {
+    text-align: center;
+}
+
+.forgot_one .right_box .grey_box .for_box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.for_box .open_it {
+    width: 100%;
+    max-width: 500PX;
+    margin: 0 auto;
+}
+
+.for_box .open_it .lock_img {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.for_box .open_it p {
+    text-align: center;
+}
+
+
+/*---contact---*/
+
+.teams {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background: transparent;
+}
+
+.about_hero {
+    background-color: #6958FF;
+    background-image: url(../images/abou_kl.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.about_hero .about_title {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.about_hero .about_title h5 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.about_hero .about_title p {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.about_hero .img_about {
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.about_hero .img_about img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 470px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: -42px;
+}
+
+.teams .flex_box .first_box {
+    background-color: #fff;
+    border: 1px solid #EFF0F6;
+    box-shadow: 0px 4px 22px rgba(8, 15, 52, 0.03);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.teams .white_box p {
+    color: #787878;
+}
+
+.teams .flex_box .first_box .mario {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.teams .flex_box .first_box .mario .iconify {
+    font-size: 30px;
+}
+
+.teams .flex_box .first_box .color_1 {
+    background-color: #FFB800;
+}
+
+.teams .flex_box .first_box .color_2 {
+    background-color: #FD4C5C;
+}
+
+.contact_det {
+    margin-left: 20px;
+    width: 100%;
+    max-width: 343px;
+}
+
+.contact_det p {
+    color: #787878;
+    margin-bottom: 0px;
+}
+
+.contact_form {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.contact_form .open_box {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #EFF0F6;
+    box-shadow: 0px 4px 22px rgba(8, 15, 52, 0.03);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.contact_form .open_box .name {
+    display: flex;
+}
+
+.contact_form .open_box .name .form_group {
+    width: 100%;
+}
+
+.contact_form .open_box .name .form_group input {
+    padding-left: 21% !important;
+}
+
+.contact_form .open_box .form_group {
+    margin-right: 20px;
+}
+
+.contact_form .open_box .form_group .open {
+    position: relative;
+}
+
+.contact_form .open_box .form_group textarea,
+.contact_form .open_box .form_group .open input {
+    background-color: #fff;
+    padding: 20px;
+    border-color: #EFF0F6;
+    padding-left: 10%;
+    box-shadow: 0px 4px 22px rgb(8 15 52 / 3%);
+}
+
+.contact_form .open_box .form_group .open svg {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #6958FF;
+}
+
+.contact_form .open_box .login_btn {
+    display: block;
+    padding: 20px 15px;
+    text-align: center;
+    margin-right: 20px;
 }
