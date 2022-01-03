@@ -58,10 +58,12 @@
     .contact_form .open_box .login_btn {
         margin-right: 0px;
     }
-    .contact_form .open_box .form_group textarea,
     .contact_form .open_box .form_group .open input,
     .contact_form .open_box .form_group .open input {
         padding-left: 12% !important;
+    }
+    .forgot_one .right_box {
+        padding-top: 7%;
     }
 }
 
@@ -105,6 +107,18 @@
     .about_hero {
         padding-top: 28%;
     }
+    .contact_us .proc .dowmload_op .play a {
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+    .contact_us .proc .dowmload_op .play a img {
+        object-fit: contain;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 @media only screen and (max-width:475px) {
@@ -115,7 +129,7 @@
     .contact_form .open_box .form_group textarea,
     .contact_form .open_box .form_group .open input,
     .contact_form .open_box .form_group .open input {
-        padding-left: 17%;
+        padding-left: 17% !important;
     }
     .teams .flex_box .first_box {
         display: block;
@@ -136,5 +150,23 @@
     .contact_form .open_box .form_group .open input,
     .contact_form .open_box .form_group .open input {
         padding-left: 19%;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .login_box .right_box {
+        padding-top: 34%;
+    }
+    .forgot_one .right_box {
+        padding-top: 7%;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .login_box .right_box {
+        padding-top: 87%;
+    }
+    .forgot_one .right_box {
+        padding-top: 14%;
     }
 }
