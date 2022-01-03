@@ -853,6 +853,10 @@ footer .social_icon .link:hover {
     font-size: 14px;
 }
 
+.opop .form-check {
+    margin-bottom: 0px;
+}
+
 .opop .form-check .form-check-input:checked {
     background-color: #6958FF;
 }
