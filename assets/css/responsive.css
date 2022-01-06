@@ -80,6 +80,10 @@
     .about_hero {
         padding-top: 22%;
     }
+    .video_op .carousel .carousel-control-prev-icon,
+    .video_op .carousel .carousel-control-next-icon {
+        display: none;
+    }
 }
 
 @media only screen and (max-width:575px) {
@@ -92,7 +96,8 @@
     .pricing .price_box .greyop h5,
     .resources .res_op .white_box h5,
     .contact_us .test_box h5,
-    .login_box .right_box .grey_box .wel_come h5 {
+    .login_box .right_box .grey_box .wel_come h5,
+    .video_op .title_video h5 {
         font-size: 30px;
     }
     .hero_top .hero_box .grey_one p {
