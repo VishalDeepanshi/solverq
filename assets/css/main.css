@@ -1152,6 +1152,7 @@ footer .social_icon .link:hover {
 .resour_box .down_op {
     border-radius: 0px 0px 20px 20px;
     padding: 10px;
+    padding-bottom: 20px;
 }
 
 .resour_box .down_op h5 {
@@ -1224,4 +1225,102 @@ footer .social_icon .link:hover {
     width: 100%;
     line-height: 30px;
     color: #787878;
+}
+
+
+/*--F&Q--*/
+
+.accor {
+    padding-top: 80px;
+}
+
+.accor .gen_side .nav {
+    display: block;
+    background: linear-gradient(rgb(221, 230, 241) 24%, rgb(246, 248, 251) 72%);
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.accor .gen_side .nav .nav-link {
+    color: #000;
+}
+
+.accor .gen_side .nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: transparent;
+    color: #6958FF;
+    font-weight: 500;
+}
+
+.accor .general_box h5 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.accor .general_box .accordion .accordion-item {
+    margin-bottom: 30px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: 1px solid #EFF0F6;
+    box-shadow: 0px 4px 22px rgba(8, 15, 52, 0.03);
+}
+
+.accor .general_box .accordion .accordion-item .accordion-button {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.accor .general_box .accordion .accordion-button::after {
+    background-image: url(../images/minu.svg);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
+
+.accor .general_box .accordion .accordion-button:not(.collapsed)::after {
+    background-image: url(../images/plus.svg);
+}
+
+.accor .general_box .accordion .accordion-button:not(.collapsed) {
+    background-color: transparent;
+    border: none;
+    color: #000;
+    box-shadow: none;
+}
+
+.accordion-body {
+    font-size: 16px;
+}
+
+
+/*--Features--*/
+
+.module_list {
+    padding-left: 12px;
+}
+
+.module_list li {
+    font-size: 16px;
+    color: #787878;
+    margin-bottom: 10px;
+    list-style: auto;
+}
+
+.center_mod {
+    justify-content: center;
+}
+
+.module_5::before {
+    background-image: url(../images/module5.svg) !important;
+}
+
+.module_6::before {
+    background-image: url(../images/module_6.svg) !important;
+}
+
+.res_img::after {
+    display: none;
 }
