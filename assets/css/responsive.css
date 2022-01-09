@@ -9,6 +9,9 @@
     .video_op .carousel-indicators {
         display: none;
     }
+    .video_op .container {
+        max-width: 1140px;
+    }
 }
 
 @media only screen and (max-width:1480px) {

@@ -466,7 +466,6 @@ header .navbar .navbar-nav .nav-item .log_in {
     margin-bottom: 15px;
     font-weight: 600;
     font-size: 16px;
-    letter-spacing: 3px;
 }
 
 .resources .res_op .white_box h5,
@@ -962,6 +961,10 @@ footer .social_icon .link:hover {
     display: flex;
     align-items: center;
     height: 100%;
+}
+
+.about_hero .about_title .white {
+    padding-top: 82px;
 }
 
 .about_hero .about_title h5 {
