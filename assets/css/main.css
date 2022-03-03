@@ -28,6 +28,17 @@ li {
     text-decoration: none;
 }
 
+.back_link {
+    display: block;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: #6958FF;
+}
+
+.back_link img {
+    margin-right: 12px;
+}
+
 .signin_btn:hover {
     background-color: #FD4C5C;
 }
