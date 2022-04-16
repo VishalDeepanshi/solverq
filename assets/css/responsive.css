@@ -6,12 +6,6 @@
     .row {
         height: 100%;
     }
-    .video_op .carousel-indicators {
-        display: none;
-    }
-    .video_op .container {
-        max-width: 1140px;
-    }
 }
 
 @media only screen and (max-width:1480px) {
@@ -29,6 +23,10 @@
         margin: 0 auto;
         margin-bottom: 20px;
     }
+    header .navbar .navbar-nav .nav-item .nav-link:hover::after {
+        width: 100% !important;
+        left: 0;
+    }
     .hero_top {
         height: initial;
         padding-top: 13%;
@@ -42,12 +40,8 @@
     .contact_us .proc .dowmload_op {
         padding: 20px;
     }
-    .login_box .left_box {
-        display: none;
-    }
-    .login_box .right_box {
-        width: 100%;
-        margin-left: 0px;
+    .mail_foot li {
+        justify-content: c;
     }
     .about_hero {
         height: initial;
